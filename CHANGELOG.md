@@ -2,23 +2,27 @@
 
 Notable user-facing changes are recorded here.
 
+## [2.0.0] - 2026-10-20
+
+### Added
+- Customizable keyboard bindings, including a key-capture workflow.
+- Horizontal and vertical sensitivity controls, linked sensitivity, fast movement, and fine aim.
+- Additional mouse actions, scrolling, drag hold/release, and relative-movement game mode.
+- Named profiles for saving and restoring per-application settings.
+- A live settings summary and duplicate-binding warnings.
+- Organized the runnable application files into the `MouseKeyboardController/` directory.
+- Updated the main README with current features, setup instructions, limitations, and project layout.
+
+### Changed
+- Simplified the repository root to keep project documentation and license separate from the runnable application files.
+- Updated the documented project layout and download instructions to match the current version.
+
 ## [1.0.0] - 2026-10-20
 
 Initial public release.
 
 ### Added
 - Windows Forms interface for selecting and launching a local executable.
-- Option to stop the process launched by the controller.
-- Arrow-key pointer movement with faster movement while Shift is held.
-- Enter and Space for left-click; Backspace for right-click.
-- Numeric-keypad controls for holding and releasing the left mouse button.
-- F6 help dialog and F7 input enable/disable toggle.
-- Portable CMD launcher and usage documentation.
-- MIT license and publicly inspectable PowerShell source.
-
-### Known limitations
-- Keyboard mappings and movement steps are fixed in this version.
-- Custom sensitivity controls and saved profiles are not included.
-- Pointer movement is constrained to the primary display.
-- Some full-screen games, anti-cheat systems, elevated applications, or custom input systems may reject synthetic input.
-- The script has not been validated across all Windows versions and games; compatibility reports are welcome.
+- Keyboard-based pointer movement, click, and drag actions.
+- Quick toggle for enabling or disabling controller input.
+- Portable PowerShell launcher with no third-party installation.
